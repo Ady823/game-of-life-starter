@@ -102,7 +102,8 @@ void populateGrid() {
 
 int sides(int counted, int y, int x) {
   counted = left(counted, y, x);
-  counted = left(counted, y, x);
+  //Kaden found that I accidentally put two calls for left() instead of left() and right()
+  counted = right(counted, y, x);
   return counted;
 }
 int left(int counted, int y, int x) {
